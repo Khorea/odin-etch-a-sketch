@@ -14,13 +14,18 @@
     </div>
     <div class="content">
         <div class="menu">
-            <div class="color-selector"></div>
+            <input type="color" class="color-selector" value="#D1B9CE"></input>
             <button class="color-mode lol">Color</button>
             <button class="rainbow-mode">Rainbow</button>
             <button class="eraser">Eraser</button>
             <button class="clear">Clear</button>
+            <div class="grid-size-container">
+                <input type="range" class="grid-size-selector" value="44">
+                <label class="grid-size-label">Grid Size</label>
+            </div>
+            
         </div>
-        <div class="grid"></div>
+        <div class="grid" draggable="false"></div>
     </div>
     <div class="footer">
         <p>Copyright @ 2021 Khorea</p>

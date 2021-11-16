@@ -14,6 +14,11 @@ button {
     transition: 0.07s;
 }
 
+.selected-button {
+    background-color: cornflowerblue;
+    color: crimson;
+}
+
 .scale-button {
     scale: 1.07;
 }
@@ -31,7 +36,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 190px;
 }
 
 .menu {
@@ -42,9 +46,28 @@ button {
 }
 
 .color-selector {
-    background-color: #D1B9CE;
+    color: #D1B9CE;
     width: 24px;
     height: 24px;
+    border-width: 0px;
+    padding: 0px;
+}
+
+.grid-size-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.grid-size-selector {
+    width: 100px;
+    color: white;
+}
+
+.grid-size-label {
+    color: #D1B9CE;
 }
 
 .grid {
@@ -56,12 +79,18 @@ button {
     border-style: solid;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0px;
+}
+
+.grid-row {
+    display: flex;
+    flex: 1 1 auto;
 }
 
 .grid-cell {
     background-color: white;
+    flex: 1 1 auto;
 }
 
 .footer {
